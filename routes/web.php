@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DivisionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('division', function () {
-    return "Hola sharpy boni";
-});
+Route::get('/', [DivisionController::class, 'index']);
+Route::get('/create', [DivisionController::class, 'create']);
