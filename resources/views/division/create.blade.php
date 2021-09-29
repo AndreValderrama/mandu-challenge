@@ -2,7 +2,8 @@
 @section('title', 'Create')    
 
 @section('content')
-<form action="">
+<form action="{{route('division.store')}}" method="POST">
+   @csrf
     <label for="">
         Nombre Division:
         <br>
@@ -32,6 +33,8 @@
         <br>
         <input type="text" name="embajador" id=""> 
     </label>
+    <br>
+    <button type="submit">Agregar</button>
 </form>
     
 @endsection
