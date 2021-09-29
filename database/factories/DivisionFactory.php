@@ -22,7 +22,12 @@ class DivisionFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->text($maxNbChars = 40),
+            'divsup' => $this->faker->word(),
+            'colab' => $this->faker->numberBetween($min = 1, $max = 25),
+            'numdiv' => $this->faker->numberBetween($min = 1, $max = 25),
+            'level' => $this->faker->numberBetween($min = 1, $max = 25),
+            'embajador' => $this->faker->name()
         ];
     }
 }
