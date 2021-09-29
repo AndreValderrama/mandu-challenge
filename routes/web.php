@@ -15,6 +15,4 @@ use App\Http\Controllers\DivisionController;
 */
 
 Route::get('/', [DivisionController::class, 'index']);
-Route::get('division', function () {
-    return "Hola sharpy boni";
-});
+Route::get('/create', [DivisionController::class, 'create']);

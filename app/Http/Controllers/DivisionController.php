@@ -14,6 +14,7 @@ class DivisionController extends Controller
     }
     public function create()
     {
+        return view('division.create');
     }
     public function show()
     {

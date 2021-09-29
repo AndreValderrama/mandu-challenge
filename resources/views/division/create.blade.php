@@ -1,4 +1,6 @@
-@extends('layouts.plantillas')
+@extends('layouts.plantilla')
+@section('title', 'Create')    
+
 @section('content')
 <form action="">
     <label for="">
@@ -12,16 +14,19 @@
         <br>
         <input type="text" name="divsup" id="">
     </label>
+    <br>
     <label for="">
         Colaboradores:
         <br>
         <input type="number" name="colab" id="">
     </label>
+    <br>
     <label for="">
         Nivel:
         <br>
         <input type="number" name="level" id=""> 
     </label>
+    <br>
     <label for="">
         Embajador:
         <br>
