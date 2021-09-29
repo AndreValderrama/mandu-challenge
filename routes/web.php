@@ -15,4 +15,5 @@ use App\Http\Controllers\DivisionController;
 */
 
 Route::get('/', [DivisionController::class, 'index']);
-Route::get('/create', [DivisionController::class, 'create']);
+Route::get('create', [DivisionController::class, 'create']);
+Route::post('create', [DivisionController::class, 'store'])->name('division.store');

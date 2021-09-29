@@ -18,8 +18,8 @@
         <td>{{$division->name}}</td>
         <td>{{$division->divsup}}</td>
         <td>{{$division->colab}}</td>
-        <td>{{$division->numdiv}}</td>
         <td>{{$division->level}}</td>
+        <td>{{$division->numdiv}}</td>
         <td>{{$division->embajador}}</td>
     </tr>
     @endforeach
