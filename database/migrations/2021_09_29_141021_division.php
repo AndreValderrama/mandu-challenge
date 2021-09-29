@@ -17,12 +17,13 @@ class Division extends Migration
         Schema::create('divisions', function (Blueprint $table) {
             $table->id();
             $table->string('name', 45)->unique();
-            $table->string('divsup', 45);
-            $table->integer('subdiv');
-            $table->integer('colab');
-            $table->integer('numdiv');
-            $table->integer('level');
-            $table->string('embajador');
+            $table->string('divsup', 45)->nullable();
+            $table->integer('subdiv')->nullable();
+            $table->integer('colab')->nullable();
+            $table->integer('numdiv')->nullable();
+            $table->integer('level')->nullable();
+            $table->string('embajador')->nullable();
+            $table->timestamps();
         });
     }
 
